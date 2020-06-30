@@ -1,0 +1,38 @@
+/* Основной цвет текста color: #212121; */
+/* Главный цвет фона   background: #ffffff;*/
+/* Цвет акцента фона  background: #2196f3;*/
+/* Вторичный цвет текста1 color: #757575;*/
+/* Цвет акцента текста  color: #ffffff;
+color: #2196f3;*/
+/* Цвет акцента текста  color: #ffffff;*/
+:root {
+  --main-text-color: #212121;
+  --main-write-color: #ffffff;
+  --text-color: #757575;
+  --hover-color: #2196f3;
+}
+
+/*  цвет logo color: #000000; */
+/* Вторичный цвет фона background: #f5f4fa; 
+    цвет наведения background: rgba(47, 48, 58, 0.8); */
+/* Цвет вторичный в футере rgba(255, 255, 255, 0.6);
+футер background: #2F303A; */
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-write-color);
+}
+/* ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+} */
+/* Эффект подсветки текущей страницы в навигации */
+/* Потом переписать с другими классами для перебивки специфичности */
+.current {
+  color: var(--hover-color);
+}
+/* Стили для index.html */
+
+/* Стили для portfolio.html */
