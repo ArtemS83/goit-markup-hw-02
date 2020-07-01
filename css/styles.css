@@ -19,8 +19,8 @@ color: #2196f3;*/
 футер background: #2F303A; */
 
 body {
-  color: var(--main-text-color);
   background-color: var(--main-write-color);
+  color: var(--main-text-color);
 }
 /* ul {
   list-style: none;
@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 } */
 
-/*                                        Шапка сайта */
+/*                                     Шапка сайта */
 
 /* "Эффект присутствия на странице */
 .nav-link.current {
@@ -44,7 +44,7 @@ a {
 .logo-web {
   color: #2196f3;
 }
-.logo-studio {
+.black-studio {
   color: #000000;
 }
 /* Текст */
@@ -59,6 +59,21 @@ a {
 .contakt-link {
   color: var(--text-color);
 }
-/* Стили для index.html */
+/*                                  Подвал сайта */
 
-/* Стили для portfolio.html */
+.footer {
+  background-color: #2f303a;
+}
+.white-studio {
+  color: #ffffff;
+}
+.address-link {
+  color: var(--main-write-color);
+}
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-join-link {
+  color: var(--main-write-color);
+}
