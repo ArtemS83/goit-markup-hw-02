@@ -28,10 +28,36 @@ body {
 a {
   text-decoration: none;
 } */
-/* Эффект подсветки текущей страницы в навигации */
-/* Потом переписать с другими классами для перебивки специфичности */
-.current {
+
+/*                                        Шапка сайта */
+
+/* "Эффект присутствия на странице */
+.nav-link.current {
   color: var(--hover-color);
+}
+/* Accent эффект */
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--hover-color);
+}
+/* Логотип */
+.logo-web {
+  color: #2196f3;
+}
+.logo-studio {
+  color: #000000;
+}
+/* Текст */
+.nav-link {
+  color: var(--main-text-color);
+}
+
+.contakt-link:hover,
+.contakt-link:focus {
+  color: var(--hover-color);
+}
+.contakt-link {
+  color: var(--text-color);
 }
 /* Стили для index.html */
 
