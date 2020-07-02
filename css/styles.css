@@ -1,35 +1,31 @@
-/* Основной цвет текста color: #212121; */
-/* Главный цвет фона   background: #ffffff;*/
-/* Цвет акцента фона  background: #2196f3;*/
-/* Вторичный цвет текста1 color: #757575;*/
-/* Цвет акцента текста  color: #ffffff;
-color: #2196f3;*/
-/* Цвет акцента текста  color: #ffffff;*/
 :root {
-  --main-text-color: #212121;
+  --main-title-color: #212121;
   --main-write-color: #ffffff;
   --text-color: #757575;
   --hover-color: #2196f3;
+  --background-color: #f5f4fa;
 }
 
-/*  цвет logo color: #000000; */
-/* Вторичный цвет фона background: #f5f4fa; 
-    цвет наведения background: rgba(47, 48, 58, 0.8); */
-/* Цвет вторичный в футере rgba(255, 255, 255, 0.6);
-футер background: #2F303A; */
+/* Цвет вторичный в футере  на иконках rgba(255, 255, 255, 0.6); */
 
 body {
+  font-family: 'Roboto', sans-serif;
+
+  letter-spacing: 0.03em;
+
   background-color: var(--main-write-color);
-  color: var(--main-text-color);
+  color: var(--main-title-color);
 }
-/* ul {
+/* Убираем точки в списках */
+.list {
   list-style: none;
 }
-a {
+/* Убираем подчеркивание в ссылках */
+.link {
   text-decoration: none;
-} */
+}
 
-/*                                     Шапка сайта */
+/*                                       Шапка сайта */
 
 /* "Эффект присутствия на странице */
 .nav-link.current {
@@ -41,6 +37,10 @@ a {
   color: var(--hover-color);
 }
 /* Логотип */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.06em;
+}
 .logo-web {
   color: #2196f3;
 }
@@ -49,7 +49,7 @@ a {
 }
 /* Текст */
 .nav-link {
-  color: var(--main-text-color);
+  color: var(--main-title-color);
 }
 
 .contakt-link:hover,
@@ -57,9 +57,140 @@ a {
   color: var(--hover-color);
 }
 .contakt-link {
+  font-style: normal;
+
   color: var(--text-color);
 }
-/*                                  Подвал сайта */
+/*                                            Основной контент */
+
+/* Hero */
+/* Зададим временный фон,чтобы было видно текст */
+.hero {
+  background-color: var(--text-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-write-color);
+}
+.hero-button {
+  /* Прописываем заново стили,т.к. button имеет свои */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+/* Секция О нас */
+.about-name {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.about-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--text-color);
+}
+/* Чем занимаемся секция */
+
+.offer-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.offer-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Зададим временный фон,чтобы было видно текст */
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-write-color);
+}
+/* Секция Наша команда */
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--text-color);
+}
+/* Секция Постоянные клиенты */
+.customers-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Секция Портфолио */
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+.filter-button.current {
+  background-color: var(--hover-color);
+  color: var(--main-write-color);
+}
+
+.filter-button {
+  /* Прописываем заново стили,т.к. button имеет свои */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  background-color: var(--background-color);
+  color: var(--main-title-color);
+}
+.portfolio-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-web,
+.portfolio-design,
+.portfolio-app,
+.portfolio-marketing {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--text-color);
+}
+.portfolio-about {
+  font-size: 18px;
+  line-height: 1.56;
+
+  /* Добавляем фон временно для видимости текста */
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--main-write-color);
+}
+/*                                             Подвал сайта */
 
 .footer {
   background-color: #2f303a;
@@ -68,12 +199,20 @@ a {
   color: #ffffff;
 }
 .address-link {
+  font-style: normal;
+
   color: var(--main-write-color);
 }
 .address-mail,
 .address-tel {
+  font-style: normal;
+
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-join-link {
+.footer-join {
   color: var(--main-write-color);
+}
+.accent-link:hover,
+.accent-link:focus {
+  color: var(--hover-color);
 }
