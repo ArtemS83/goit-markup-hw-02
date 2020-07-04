@@ -27,7 +27,10 @@ body {
 .link {
   text-decoration: none;
 }
-
+/* Убираем наклонность текста */
+.address {
+  font-style: normal;
+}
 /*                                       Шапка сайта */
 
 /* "Эффект присутствия на странице */
@@ -36,7 +39,9 @@ body {
 }
 /* Accent эффект */
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.contakt-link:hover,
+.contakt-link:focus {
   color: var(--hover-color);
 }
 /* Логотип */
@@ -55,13 +60,7 @@ body {
   color: var(--main-title-color);
 }
 
-.contakt-link:hover,
-.contakt-link:focus {
-  color: var(--hover-color);
-}
 .contakt-link {
-  font-style: normal;
-
   color: var(--text-color);
 }
 /*                                            Основной контент */
@@ -190,7 +189,7 @@ body {
   color: var(--main-write-color);
 }
 /*                                             Подвал сайта */
-
+/* Добавляем фон для видимости текста */
 .footer {
   background-color: #2f303a;
 }
@@ -198,14 +197,10 @@ body {
   color: #ffffff;
 }
 .address-link {
-  font-style: normal;
-
   color: var(--main-write-color);
 }
 .address-mail,
 .address-tel {
-  font-style: normal;
-
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-join {
