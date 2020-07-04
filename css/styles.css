@@ -172,10 +172,13 @@ body {
   background-color: var(--background-color);
   color: var(--main-title-color);
 }
+
 .portfolio-name {
-  /* font-size: 18px; */
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--main-title-color);
 }
 .portfolio-web,
 .portfolio-design,
